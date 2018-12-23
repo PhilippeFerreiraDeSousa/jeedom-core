@@ -373,7 +373,7 @@ CREATE TABLE IF NOT EXISTS `interactQuery` (
   `actions` TEXT NULL,
   PRIMARY KEY (`id`),
   INDEX `fk_sarahQuery_sarahDef1_idx` (`interactDef_id` ASC),
-  FULLTEXT INDEX `query` (`query` ASC))
+  FULLTEXT `query` (`query`))
 ENGINE = MyISAM;
 
 
